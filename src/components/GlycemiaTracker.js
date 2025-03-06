@@ -23,9 +23,9 @@ const GlycemiaTracker = () => {
     localStorage.setItem('glycemiaRecords', JSON.stringify(records));
   }, [records]);
 
-  // Check if the current date already has two records
+  // Check if the current date already has 3 records per day
   const canAddRecord = (date) => {
-    return records.filter(record => record.date === date).length < 2;
+    return records.filter(record => record.date === date).length < 3;
   };
 
   const handleInputChange = (e) => {
@@ -46,7 +46,7 @@ const GlycemiaTracker = () => {
 
     // Check if we can add another record for this date
     if (!canAddRecord(recordDate)) {
-      alert('Vous avez déjà deux mesures pour cette date.');
+      alert('Vous avez déjà trois mesures pour cette date.');
       return;
     }
 
@@ -126,7 +126,7 @@ const GlycemiaTracker = () => {
               onChange={handleInputChange}
               min="0"
               className="mt-1"
-              placeholder="Ex: 120"
+              placeholder="Ex: 15"
             />
           </div>
           
