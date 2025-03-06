@@ -1,7 +1,7 @@
 # Suivi de Glycémie
 
 <!-- ![Bannière Suivi de Glycémie]('glycemia-tracker/src/images/banner.png') -->
-<img src="glycemia-tracker/src/images/banner.png" alt="Bannière Suivi de Glycémie">
+<img src="src/images/banner.png" alt="Bannière Suivi de Glycémie">
 
 Une application web simple et efficace pour suivre vos niveaux de glycémie quotidiens.
 
