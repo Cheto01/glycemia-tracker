@@ -3,6 +3,7 @@ import GlycemiaTracker from './components/GlycemiaTracker';
 import Footer from './components/Footer';
 import './App.css';
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
