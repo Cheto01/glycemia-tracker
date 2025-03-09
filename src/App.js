@@ -2,6 +2,7 @@ import React from 'react';
 import GlycemiaTracker from './components/GlycemiaTracker';
 import Footer from './components/Footer';
 import './App.css';
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
